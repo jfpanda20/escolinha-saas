@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Aluno } from "../../types/aluno";
-import { supabase } from "../../lib/supabase";
+import { Aluno } from "../types/aluno";
+import { supabase } from "../lib/supabase";
 import { useRouter } from "next/navigation";
 
 export default function AlunosPage() {
