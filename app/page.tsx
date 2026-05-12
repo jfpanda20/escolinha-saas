@@ -4,17 +4,21 @@ import { useState } from "react";
 import { Aluno } from "@/types/aluno";
 
 export default function AlunosPage() {
-  const [form, setForm] = useState<Aluno>({
-    nome: "",
-    dataNascimento: "",
-    responsavel: "",
-    whatsapp: "",
-    email: "",
-    mensalidade: 0,
-    vencimento: 1,
-    observacoes: "",
-  });
+const [form, setForm] = useState<Aluno>({
+  empresa_id: "",
+  nome: "",
+  dataNascimento: "",
+  responsavel: "",
+  whatsapp: "",
+  email: "",
+  mensalidade: 0,
+  vencimento: "",
+  observacoes: "",
 
+  data_inicio: "",
+  data_fim: "",
+  status_matricula: "ativo",
+});
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
